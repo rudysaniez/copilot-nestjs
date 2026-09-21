@@ -1,0 +1,240 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "AppController_getHello",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "App"
+        ]
+      }
+    },
+    "/todos": {
+      "post": {
+        "operationId": "TodosController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTodoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Todo créé",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Todo"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Créer un todo",
+        "tags": [
+          "todos"
+        ]
+      },
+      "get": {
+        "operationId": "TodosController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Liste des todos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Todo"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "Lister tous les todos",
+        "tags": [
+          "todos"
+        ]
+      }
+    },
+    "/todos/{id}": {
+      "get": {
+        "operationId": "TodosController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identifiant du todo",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Todo trouvé",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Todo"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Todo introuvable"
+          }
+        },
+        "summary": "Récupérer un todo par id",
+        "tags": [
+          "todos"
+        ]
+      },
+      "patch": {
+        "operationId": "TodosController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identifiant du todo",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTodoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Todo mis à jour",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Todo"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Todo introuvable"
+          }
+        },
+        "summary": "Mettre à jour un todo",
+        "tags": [
+          "todos"
+        ]
+      },
+      "delete": {
+        "operationId": "TodosController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identifiant du todo",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Todo supprimé"
+          },
+          "404": {
+            "description": "Todo introuvable"
+          }
+        },
+        "summary": "Supprimer un todo",
+        "tags": [
+          "todos"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "copilot-nestjs API",
+    "description": "API de gestion de todos, adossée à PostgreSQL",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [
+    {
+      "name": "todos",
+      "description": ""
+    }
+  ],
+  "servers": [],
+  "components": {
+    "schemas": {
+      "CreateTodoDto": {
+        "type": "object",
+        "properties": {
+          "todo": {
+            "type": "string",
+            "description": "Libellé du todo",
+            "example": "Acheter du pain",
+            "maxLength": 255
+          }
+        },
+        "required": [
+          "todo"
+        ]
+      },
+      "Todo": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "Identifiant technique du todo",
+            "example": 1
+          },
+          "todo": {
+            "type": "string",
+            "description": "Libellé du todo",
+            "example": "Acheter du pain",
+            "maxLength": 255
+          }
+        },
+        "required": [
+          "id",
+          "todo"
+        ]
+      },
+      "UpdateTodoDto": {
+        "type": "object",
+        "properties": {
+          "todo": {
+            "type": "string",
+            "description": "Libellé du todo",
+            "example": "Acheter du pain",
+            "maxLength": 255
+          }
+        }
+      }
+    }
+  }
+}

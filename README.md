@@ -119,6 +119,16 @@ Supprimer un todo :
 curl -X DELETE http://localhost:3000/todos/1
 ```
 
+## Documentation OpenAPI (Swagger)
+
+Une fois l'application démarrée, la documentation interactive Swagger UI est disponible sur [http://localhost:3000/api](http://localhost:3000/api), et le contrat OpenAPI v3 brut (JSON) sur [http://localhost:3000/api-json](http://localhost:3000/api-json).
+
+Pour générer un fichier `openapi.json` statique à la racine du projet (build + démarrage temporaire + récupération du contrat) :
+
+```bash
+npm run openapi:generate
+```
+
 ## Tests
 
 ```bash
