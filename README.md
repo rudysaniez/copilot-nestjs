@@ -83,6 +83,42 @@ Une fois démarrée, l'application écoute par défaut sur [http://localhost:300
 | PATCH   | `/todos/:id`  | Mettre à jour un todo           |
 | DELETE  | `/todos/:id`  | Supprimer un todo               |
 
+#### Exemples avec curl
+
+Créer un todo :
+
+```bash
+curl -X POST http://localhost:3000/todos \
+  -H "Content-Type: application/json" \
+  -d '{"todo": "Acheter du pain"}'
+```
+
+Lister tous les todos :
+
+```bash
+curl http://localhost:3000/todos
+```
+
+Récupérer un todo par id :
+
+```bash
+curl http://localhost:3000/todos/1
+```
+
+Mettre à jour un todo (partiel, PATCH) :
+
+```bash
+curl -X PATCH http://localhost:3000/todos/1 \
+  -H "Content-Type: application/json" \
+  -d '{"todo": "Acheter du pain complet"}'
+```
+
+Supprimer un todo :
+
+```bash
+curl -X DELETE http://localhost:3000/todos/1
+```
+
 ## Tests
 
 ```bash
