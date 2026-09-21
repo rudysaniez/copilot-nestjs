@@ -198,6 +198,12 @@
             "description": "Libellé du todo",
             "example": "Acheter du pain",
             "maxLength": 255
+          },
+          "complete": {
+            "type": "boolean",
+            "description": "Indique si le todo est terminé",
+            "example": false,
+            "default": false
           }
         },
         "required": [
@@ -217,11 +223,18 @@
             "description": "Libellé du todo",
             "example": "Acheter du pain",
             "maxLength": 255
+          },
+          "complete": {
+            "type": "boolean",
+            "description": "Indique si le todo est terminé",
+            "example": false,
+            "default": false
           }
         },
         "required": [
           "id",
-          "todo"
+          "todo",
+          "complete"
         ]
       },
       "UpdateTodoDto": {
@@ -232,6 +245,12 @@
             "description": "Libellé du todo",
             "example": "Acheter du pain",
             "maxLength": 255
+          },
+          "complete": {
+            "type": "boolean",
+            "description": "Indique si le todo est terminé",
+            "example": false,
+            "default": false
           }
         }
       }

@@ -7,5 +7,8 @@ export default defineConfig({
     globals: true,
     root: './',
     include: ['**/*.e2e-spec.ts'],
+    // Les suites e2e partagent une même base PostgreSQL (synchronize TypeORM) ;
+    // on désactive le parallélisme entre fichiers pour éviter les races de schéma.
+    fileParallelism: false,
   },
 });
