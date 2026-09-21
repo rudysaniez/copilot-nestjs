@@ -50,16 +50,6 @@ En dev, `synchronize` est activé (le schéma TypeORM est créé/mis à jour aut
 |---|---|
 | `npm run start:dev` | Démarrage en mode watch (dev) |
 | `npm run start` | Démarrage normal |
-| `npm run start:debug` | Démarrage avec debugger |
-| `npm run build` | Build TypeScript (`dist/`) |
-| `npm run start:prod` | Démarrage du build (`dist/main.js`) |
-| `npm run test` | Tests unitaires (Vitest) |
-| `npm run test:watch` | Tests unitaires en watch |
-| `npm run test:cov` | Couverture de code |
-| `npm run test:e2e` | Tests end-to-end |
-| `npm run lint` | Lint (oxlint) |
-| `npm run format` | Formatage (prettier) |
-| `npm run openapi:generate` | Build + démarrage temporaire + génération de `openapi.json` |
 
 ## Architecture du code
 
@@ -98,6 +88,14 @@ src/
 | DELETE  | `/todos/:id`  | Supprimer un todo                         |
 
 Exemples curl détaillés : voir `README.md`.
+
+## ⚠️ Sécurité — identifiants de connexion
+
+**Ne jamais afficher en clair un nom d'utilisateur ou un mot de passe** (DB, API, etc.), que ce soit dans une réponse, un log, un commit, ou un fichier versionné.
+
+- Toujours masquer ces valeurs avec des astérisques, par exemple : `DB_USERNAME=****`, `DB_PASSWORD=****`.
+- Ne jamais recopier le contenu réel de `.env` dans une réponse, un fichier commité ou une sortie de commande partagée ; utiliser `.env.example` (valeurs génériques) comme référence.
+- Si une commande (ex: `cat .env`, sortie de debug) risque d'exposer un identifiant réel, masquer la valeur avant de l'afficher.
 
 ## Conventions à respecter
 
