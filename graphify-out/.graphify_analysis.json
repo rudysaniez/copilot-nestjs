@@ -1,0 +1,325 @@
+{
+  "communities": {
+    "0": [
+      "apicreatedresponse",
+      "apinocontentresponse",
+      "apinotfoundresponse",
+      "apiokresponse",
+      "apioperation",
+      "apiparam",
+      "apitags",
+      "body",
+      "column",
+      "delete",
+      "entity",
+      "httpcode",
+      "injectrepository",
+      "param",
+      "patch",
+      "post",
+      "primarygeneratedcolumn",
+      "src_todos_entities_todo_entity_todo",
+      "src_todos_entities_todo_entity_ts_apiproperty",
+      "src_todos_todos_controller_todoscontroller",
+      "src_todos_todos_controller_todoscontroller_constructor",
+      "src_todos_todos_controller_todoscontroller_create",
+      "src_todos_todos_controller_todoscontroller_findall",
+      "src_todos_todos_controller_todoscontroller_findone",
+      "src_todos_todos_controller_todoscontroller_remove",
+      "src_todos_todos_controller_todoscontroller_update",
+      "src_todos_todos_controller_ts_controller",
+      "src_todos_todos_controller_ts_get",
+      "src_todos_todos_service_todosservice",
+      "src_todos_todos_service_todosservice_constructor",
+      "src_todos_todos_service_todosservice_findall",
+      "src_todos_todos_service_todosservice_findone",
+      "src_todos_todos_service_todosservice_remove",
+      "src_todos_todos_service_todosservice_update",
+      "src_todos_todos_service_ts_injectable"
+    ],
+    "1": [
+      "package",
+      "package_author",
+      "package_description",
+      "package_license",
+      "package_name",
+      "package_private",
+      "package_type",
+      "package_version",
+      "ref_class_transformer",
+      "ref_class_validator",
+      "ref_nestjs_cli",
+      "ref_nestjs_config",
+      "ref_nestjs_mau",
+      "ref_nestjs_platform_express",
+      "ref_nestjs_schematics",
+      "ref_nestjs_testing",
+      "ref_oxlint",
+      "ref_pg",
+      "ref_prettier",
+      "ref_reflect_metadata",
+      "ref_rxjs",
+      "ref_source_map_support",
+      "ref_supertest",
+      "ref_types_express",
+      "ref_types_node",
+      "ref_types_supertest",
+      "ref_typescript",
+      "ref_vite_tsconfig_paths",
+      "ref_vitest",
+      "ref_vitest_coverage_v8",
+      "test_app_e2e_spec",
+      "vitest_config",
+      "vitest_config_e2e"
+    ],
+    "2": [
+      "isnotempty",
+      "isstring",
+      "maxlength",
+      "ref_nestjs_common",
+      "ref_nestjs_core",
+      "ref_nestjs_swagger",
+      "ref_nestjs_typeorm",
+      "ref_typeorm",
+      "src_app_module",
+      "src_app_module_appmodule",
+      "src_app_module_ts_module",
+      "src_main",
+      "src_main_bootstrap",
+      "src_todos_dto_create_todo_dto",
+      "src_todos_dto_create_todo_dto_createtododto",
+      "src_todos_dto_create_todo_dto_ts_apiproperty",
+      "src_todos_dto_update_todo_dto",
+      "src_todos_dto_update_todo_dto_updatetododto",
+      "src_todos_entities_todo_entity",
+      "src_todos_todos_controller",
+      "src_todos_todos_module",
+      "src_todos_todos_module_todosmodule",
+      "src_todos_todos_module_ts_module",
+      "src_todos_todos_service",
+      "src_todos_todos_service_todosservice_create"
+    ],
+    "3": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "tsconfig_compileroptions_declaration",
+      "tsconfig_compileroptions_emitdecoratormetadata",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_experimentaldecorators",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_outdir",
+      "tsconfig_compileroptions_removecomments",
+      "tsconfig_compileroptions_resolvepackagejsonexports",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_sourcemap",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_strictpropertyinitialization",
+      "tsconfig_compileroptions_target",
+      "tsconfig_compileroptions_types"
+    ],
+    "4": [
+      "package_devdependencies",
+      "package_devdependencies_nestjs_cli",
+      "package_devdependencies_nestjs_mau",
+      "package_devdependencies_nestjs_schematics",
+      "package_devdependencies_nestjs_testing",
+      "package_devdependencies_oxlint",
+      "package_devdependencies_prettier",
+      "package_devdependencies_source_map_support",
+      "package_devdependencies_supertest",
+      "package_devdependencies_types_express",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_supertest",
+      "package_devdependencies_typescript",
+      "package_devdependencies_vite_tsconfig_paths",
+      "package_devdependencies_vitest",
+      "package_devdependencies_vitest_coverage_v8"
+    ],
+    "5": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_deploy",
+      "package_scripts_format",
+      "package_scripts_lint",
+      "package_scripts_openapi_generate",
+      "package_scripts_start",
+      "package_scripts_start_debug",
+      "package_scripts_start_dev",
+      "package_scripts_start_prod",
+      "package_scripts_test",
+      "package_scripts_test_cov",
+      "package_scripts_test_debug",
+      "package_scripts_test_e2e",
+      "package_scripts_test_watch"
+    ],
+    "6": [
+      "package_dependencies",
+      "package_dependencies_class_transformer",
+      "package_dependencies_class_validator",
+      "package_dependencies_nestjs_common",
+      "package_dependencies_nestjs_config",
+      "package_dependencies_nestjs_core",
+      "package_dependencies_nestjs_platform_express",
+      "package_dependencies_nestjs_swagger",
+      "package_dependencies_nestjs_typeorm",
+      "package_dependencies_pg",
+      "package_dependencies_reflect_metadata",
+      "package_dependencies_rxjs",
+      "package_dependencies_typeorm"
+    ],
+    "7": [
+      "src_app_controller",
+      "src_app_controller_appcontroller",
+      "src_app_controller_appcontroller_constructor",
+      "src_app_controller_appcontroller_gethello",
+      "src_app_controller_spec",
+      "src_app_controller_ts_controller",
+      "src_app_controller_ts_get",
+      "src_app_service",
+      "src_app_service_appservice",
+      "src_app_service_appservice_gethello",
+      "src_app_service_ts_injectable"
+    ],
+    "8": [
+      "oxlint",
+      "oxlint_env",
+      "oxlint_env_node",
+      "oxlint_rules",
+      "oxlint_rules_typescript_eslint_no_explicit_any",
+      "oxlint_rules_typescript_eslint_no_floating_promises",
+      "oxlint_schema"
+    ],
+    "9": [
+      "ref_tsconfig_json",
+      "tsconfig_build",
+      "tsconfig_build_compileroptions",
+      "tsconfig_build_compileroptions_rootdir",
+      "tsconfig_build_exclude",
+      "tsconfig_build_extends",
+      "tsconfig_build_include"
+    ],
+    "10": [
+      "nest_cli",
+      "nest_cli_collection",
+      "nest_cli_compileroptions",
+      "nest_cli_compileroptions_deleteoutdir",
+      "nest_cli_schema",
+      "nest_cli_sourceroot"
+    ],
+    "11": [
+      "ref_node_child_process",
+      "ref_node_fs",
+      "scripts_generate_openapi",
+      "scripts_generate_openapi_server",
+      "scripts_generate_openapi_waitforserver"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10252100840336134,
+    "1": 0.06628787878787878,
+    "2": 0.16333333333333333,
+    "3": 0.1,
+    "4": 0.125,
+    "5": 0.13333333333333333,
+    "6": 0.15384615384615385,
+    "7": 0.2909090909090909,
+    "8": 0.2857142857142857,
+    "9": 0.2857142857142857,
+    "10": 0.3333333333333333,
+    "11": 0.4
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 19
+    },
+    {
+      "id": "src_todos_entities_todo_entity_todo",
+      "label": "Todo",
+      "degree": 18
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 15
+    },
+    {
+      "id": "src_todos_todos_service_todosservice",
+      "label": "TodosService",
+      "degree": 11
+    },
+    {
+      "id": "src_todos_todos_controller_todoscontroller",
+      "label": "TodosController",
+      "degree": 10
+    },
+    {
+      "id": "src_todos_dto_create_todo_dto_createtododto",
+      "label": "CreateTodoDto",
+      "degree": 10
+    },
+    {
+      "id": "ref_nestjs_common",
+      "label": "@nestjs/common",
+      "degree": 9
+    },
+    {
+      "id": "src_app_service_appservice",
+      "label": "AppService",
+      "degree": 7
+    },
+    {
+      "id": "src_app_controller_appcontroller",
+      "label": "AppController",
+      "degree": 6
+    },
+    {
+      "id": "ref_nestjs_swagger",
+      "label": "@nestjs/swagger",
+      "degree": 6
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Todo` connect `Community 0` to `Community 2`?",
+      "why": "High betweenness centrality (0.117) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `Community 4` to `Community 1`?",
+      "why": "High betweenness centrality (0.114) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `@nestjs/common` connect `Community 2` to `Community 1`, `Community 7`?",
+      "why": "High betweenness centrality (0.110) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `author`, `description`, `license` to the rest of the system?",
+      "why": "96 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10252100840336134 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06628787878787878 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
