@@ -1,7 +1,3 @@
-# AGENT.md — todos-api
-
-Ce fichier donne à un assistant IA (agent de code) le contexte nécessaire pour travailler efficacement sur ce projet.
-
 ## Résumé du projet
 
 API REST NestJS (`todos-api`) exposant un CRUD de todos, persistés dans une base PostgreSQL (`workDB`, table `todos`), avec documentation OpenAPI v3 (Swagger) et CORS ouvert.
@@ -37,8 +33,8 @@ Copier `.env.example` en `.env` et adapter les valeurs de connexion PostgreSQL :
 PORT=3000
 DB_HOST=localhost
 DB_PORT=5432
-DB_USERNAME=postgres
-DB_PASSWORD=postgres
+DB_USERNAME=*
+DB_PASSWORD=*
 DB_DATABASE=workDB
 ```
 
