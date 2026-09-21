@@ -28,3 +28,6 @@ lerna-debug.log*
 
 # TypeScript build info
 *.tsbuildinfo
+
+# Graphify generated knowledge graph
+/graphify-out
