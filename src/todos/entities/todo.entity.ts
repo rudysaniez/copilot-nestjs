@@ -19,4 +19,13 @@ export class Todo {
   })
   @Column({ type: 'varchar', length: 255 })
   todo: string;
+
+  @ApiProperty({
+    description: 'Indique si le todo est terminé',
+    example: false,
+    type: Boolean,
+    default: false,
+  })
+  @Column({ type: 'boolean', default: false })
+  complete: boolean;
 }

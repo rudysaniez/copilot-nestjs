@@ -10,7 +10,7 @@ Projet [NestJS](https://nestjs.com/).
 
 ## Base de données
 
-L'API se connecte à une base PostgreSQL locale (ex: conteneur Docker). Elle contient une table `todos` (`id` technique auto-incrémenté + `todo` varchar(255)), créée/synchronisée automatiquement au démarrage (mode dev) via TypeORM.
+L'API se connecte à une base PostgreSQL locale (ex: conteneur Docker). Elle contient une table `todos` (`id` technique auto-incrémenté, `todo` varchar(255) et `complete` boolean, par défaut `false`), créée/synchronisée automatiquement au démarrage (mode dev) via TypeORM.
 
 Copiez `.env.example` en `.env` et adaptez les valeurs à votre instance PostgreSQL :
 
@@ -77,7 +77,7 @@ Une fois démarrée, l'application écoute par défaut sur [http://localhost:300
 
 | Méthode | URL           | Description                     |
 |---------|---------------|----------------------------------|
-| POST    | `/todos`      | Créer un todo (`{ "todo": "..." }`) |
+| POST    | `/todos`      | Créer un todo (`{ "todo": "...", "complete": false }`) |
 | GET     | `/todos`      | Lister tous les todos           |
 | GET     | `/todos/:id`  | Récupérer un todo par id        |
 | PATCH   | `/todos/:id`  | Mettre à jour un todo           |
@@ -111,6 +111,14 @@ Mettre à jour un todo (partiel, PATCH) :
 curl -X PATCH http://localhost:3000/todos/1 \
   -H "Content-Type: application/json" \
   -d '{"todo": "Acheter du pain complet"}'
+```
+
+Marquer un todo comme terminé :
+
+```bash
+curl -X PATCH http://localhost:3000/todos/1 \
+  -H "Content-Type: application/json" \
+  -d '{"complete": true}'
 ```
 
 Supprimer un todo :

@@ -1,5 +1,5 @@
-import { IsNotEmpty, IsString, MaxLength } from 'class-validator';
-import { ApiProperty } from '@nestjs/swagger';
+import { IsBoolean, IsNotEmpty, IsOptional, IsString, MaxLength } from 'class-validator';
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 export class CreateTodoDto {
   @ApiProperty({
@@ -11,4 +11,13 @@ export class CreateTodoDto {
   @IsNotEmpty()
   @MaxLength(255)
   todo: string;
+
+  @ApiPropertyOptional({
+    description: 'Indique si le todo est terminé',
+    example: false,
+    default: false,
+  })
+  @IsOptional()
+  @IsBoolean()
+  complete?: boolean;
 }
